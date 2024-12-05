@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='plus-ui.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
-<b:comment>
-<!--[
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='index.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
 
-  ==============================================================================
-
-    >  Before you edit HTML, please read the statement carefully to make sure
-       you don't get in problem while editing:
-
-    1. Make changes if and only if our team suggested you to do or official
-       documentation pointed to that particular code.
-    2. Don't change id attribute of any node
-    3. It is recommended that you take a backup of theme before editing.
-    4. If a comment says 'Restricted Area' or 'Do not remove', don't make
-       changes there.
-    5. If you don't understand anything from Documentation, please contact us.
-
-  ==============================================================================
-
-    >  WARNING :
-
-       This theme is premium (paid).
-       You can only get it by purchasing officially from 'toishare.com'.
-       If you get it for free by any method, that means you get it illegally.
-
-  ==============================================================================
-
-]-->
-</b:comment>
 <b:with value='data:skin.vars' var='vars'>
 <b:with value='{ status: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot;), type: (data:vars.amp_story == &quot;2px&quot; ? 1 : 2), active: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot; and data:view.isPost and (data:vars.amp_story != &quot;2px&quot; ? snippet(data:view.url.canonical) contains &quot;story.html&quot; : true)) }' var='story'>
 <b:with value='{ status: (data:vars.amp_status == &quot;2px&quot;), type: (data:vars.amp_type == &quot;1px&quot; ? 1 : data:vars.amp_type == &quot;2px&quot; ? 2 : 3), active: (data:story.active or (data:vars.amp_status == &quot;2px&quot; and (data:vars.amp_type != &quot;1px&quot; ? data:view.url == params(data:view.url, { amp: &quot;1&quot; }) : true))) }' var='amp'>
