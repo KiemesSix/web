@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='index.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='plus-ui.xml' b:templateVersion='3.0.0' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><b:attr name='xmlns' value=''/><b:attr name='xmlns:b' value=''/><b:attr name='xmlns:expr' value=''/><b:attr name='xmlns:data' value=''/>
 
 <b:with value='data:skin.vars' var='vars'>
 <b:with value='{ status: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot;), type: (data:vars.amp_story == &quot;2px&quot; ? 1 : 2), active: (data:vars.amp_status == &quot;2px&quot; and data:vars.amp_story != &quot;1px&quot; and data:view.isPost and (data:vars.amp_story != &quot;2px&quot; ? snippet(data:view.url.canonical) contains &quot;story.html&quot; : true)) }' var='story'>
@@ -14,11 +14,11 @@
 <b:attr cond='data:amp.active' name='amp' value='amp'/>
 
 <head>
-  <b:comment><!--[ <head> | <!> Add custom codes (below) ]--></b:comment>
+  <b:comment><!--[ <head> | <!> ↓ ]--></b:comment>
 
 
 
-  <b:comment><!--[ <head> | <!> Add custom codes (above) ]--></b:comment>
+  <b:comment><!--[ <head> | <!> ↑ ]--></b:comment>
 
   <b:comment><!--[ Meta for browser ]--></b:comment>
   <meta expr:charset='data:blog.encoding'/>
@@ -201,13 +201,13 @@
 ========================
      Configurations
 ========================
-<Variable name="meta.keywords" description="Keywords Meta Tag content" type="string" default="" value="KEYWORD_1, KEYWORD_2, KEYWORD_3"/>
+<Variable name="meta.keywords" description="Keywords Meta Tag content" type="string" default="" value="KiemesSix, kiemessix.blogspot.com, kiemessix, Kiếm Sĩ, kiếm sĩ"/>
 [!] Keywords Meta Tag content (comma-separated)
 [!] @type {String}
 [!] If Blank: Doesn't add keywords other than page name
 [!] Message: Separate multiple keyword with comma
 
-<Variable name="meta.icon" description="Favicon URL" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisldTSPR5qQSsrqZDyfYV81HFSq4Pko5u8xpbzKJ7V05CZAaCkfxG550uqbp2xlCxukxcVL4i2so2XxNri-wqqUO0yuVLLznfFes1rdmg7Ywq8pWE8FXwWQfcyrNiAPlyI3_ngX12x7-KGzAVPfjiTWPMP3HdwelG4pn729xMfH05-hdWVbQyaIsgMkQg/s0/favicon.png"/>
+<Variable name="meta.icon" description="Favicon URL" type="string" default="" value="https://cdn.jsdelivr.net/gh/KiemesSix/web@app/image/icon/favicon.svg"/>
 [!] Favicon URL
 [!] @type {String}
 [!] Recommended image ratio: 1:1
@@ -273,48 +273,48 @@
 [!] @type {String}
 [!] Warning: Don't add invalid disqus shortname
 
-<Variable name="font.head" description="Heading font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.head" description="Heading font name" type="string" default="" value="Inter"/>
 [!] Heading font name
 [!] @type {String}
 
-<Variable name="font.body" description="Body font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.body" description="Body font name" type="string" default="" value="Inter"/>
 [!] Body font name
 [!] @type {String}
 
-<Variable name="font.bodyAlt" description="Body alternative font name" type="string" default="" value="Google Sans Text"/>
+<Variable name="font.bodyAlt" description="Body alternative font name" type="string" default="" value="Inter"/>
 [!] Body alternative font name
 [!] @type {String}
 
-<Variable name="font.code" description="Code Font Name" type="string" default="" value="Google Sans Mono"/>
+<Variable name="font.code" description="Code Font Name" type="string" default="" value="Roboto Mono"/>
 [!] Code font name
 [!] @type {String}
 
-<Variable name="font.css" description="Font CSS" type="string" default="" value="@font-face{font-family:&#39;Google Sans Text&#39;;font-style:normal;font-weight:400;font-display:swap;src:local(&#39;Google Sans Text&#39;),local(&#39;Google-Sans-Text&#39;),url(https://fonts.gstatic.com/s/googlesanstext/v16/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2iw.woff2) format(&#39;woff2&#39;)} @font-face{font-family:&#39;Google Sans Text&#39;;font-style:normal;font-weight:700;font-display:swap;src:local(&#39;Google Sans Text&#39;),local(&#39;Google-Sans-Text&#39;),url(https://fonts.gstatic.com/s/googlesanstext/v16/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmhjtg.woff2) format(&#39;woff2&#39;)} @font-face{font-family:&#39;Google Sans Mono&#39;;font-style:normal;font-weight:400;font-display:swap;src:local(&#39;Google Sans Mono&#39;),local(&#39;Google-Sans-Mono&#39;),url(https://fonts.gstatic.com/s/googlesansmono/v4/P5sUzYWFYtnZ_Cg-t0Uq_rfivrdYH4RE8-pZ5gQ1abT53wVQGrk.woff2) format(&#39;woff2&#39;)}"/>
+<Variable name="font.css" description="Font CSS" type="string" default="" value="@font-face{font-family:&#39;&#39;;font-style:normal;font-weight:400;font-display:swap;src:local(&#39;&#39;),local(&#39;&#39;),url() format(&#39;woff2&#39;)} @font-face{font-family:&#39;&#39;;font-style:normal;font-weight:700;font-display:swap;src:local(&#39;&#39;),local(&#39;&#39;),url() format(&#39;woff2&#39;)} @font-face{font-family:&#39;&#39;;font-style:normal;font-weight:400;font-display:swap;src:local(&#39;&#39;),local(&#39;&#39;),url() format(&#39;woff2&#39;)}"/>
 [!] Font CSS
 [!] @type {String}
 [!] Warning: The font CSS must be in single line and string must be escaped
 
-<Variable name="font.link1" description="Font Link 1" type="string" default="" value=""/>
+<Variable name="font.link1" description="Font Link 1" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 1
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link2" description="Font Link 2" type="string" default="" value=""/>
+<Variable name="font.link2" description="Font Link 2" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 2
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link3" description="Font Link 3" type="string" default="" value=""/>
+<Variable name="font.link3" description="Font Link 3" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 3
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link4" description="Font Link 4" type="string" default="" value=""/>
+<Variable name="font.link4" description="Font Link 4" type="string" default="" value="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/>
 [!] Font Link 4
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
 
-<Variable name="font.link5" description="Font Link 5" type="string" default="" value=""/>
+<Variable name="font.link5" description="Font Link 5" type="string" default="" value="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap"/>
 [!] Font Link 5
 [!] @type {String}
 [!] Warning: Don't add invalid font css url
@@ -1258,7 +1258,7 @@ body{position:relative;margin:0;padding:0;top:0;width:100%;font-family:var(--fon
 .fotC .LinkList ul:not(.sL) li::before{content:'\2013';opacity:.3}
 .fotC .sL{display:flex;flex-wrap:wrap;align-items:baseline;font-size:13px;opacity:.8}
 .fotC .sL li{display:inline-flex;align-items:baseline}
-.fotC .sL li:not(:first-child)::before{content:'/';margin:0 5px}
+.fotC .sL li:not(:first-child)::before{content:'‧';margin:0 5px}
 .fotC .sL li >*::before{content:attr(data-text)}
 .fotN ul{list-style:none;margin:0;padding:0}
 .fotN{display:flex;flex-wrap:wrap;position:relative;width:calc(100% + 30px);left:-15px;right:-15px}
@@ -1277,11 +1277,11 @@ body{position:relative;margin:0;padding:0;top:0;width:100%;font-family:var(--fon
 .abtD{-webkit-box-orient:vertical;-webkit-line-clamp:2;display:-webkit-box;line-height:1.4em;margin:4px 0 0;overflow:hidden}
 
 /* Footer credit */
-.fotC .credit a{display:inline-flex;align-items:center;white-space:nowrap}
+.fotC .credit a{display:inline-flex;align-items:center;white-space:nowrap;color:inherit;}
 .fotC .credit a svg{width:13px;height:13px;margin:0 3px;flex-shrink:0}
 .cdtN{display:flex;align-items:baseline;justify-content:space-between;overflow:hidden}
 .fotCd{display:inline-flex;justify-content:space-between;width:100%;line-height:1.4}
-.fotCd .credit{flex-shrink:0;max-width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.fotCd .credit{flex-shrink:0;max-width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;opacity:.6;}
 .fotCd .creator{margin-inline-start:20px;white-space:nowrap;opacity:0}
 
 /* Article section */
@@ -1306,7 +1306,7 @@ body{position:relative;margin:0;padding:0;top:0;width:100%;font-family:var(--fon
 .blogT .t span{font-weight:400;font-size:90%;opacity:.7}
 .blogT .t span::before{content:attr(data-text)}
 .blogT .t span::after{content:'';margin:0 4px}
-.blogT .t span.hm::after{content:'/';margin:0 8px}
+.blogT .t span.hm::after{content:'‧';margin:0 8px}
 
 /* Thumbnail */
 .pThmb{position:relative;border-radius:5px;margin-bottom:20px;background:var(--transB);overflow:hidden}
@@ -1352,7 +1352,7 @@ span.imgThm::before{content:'';width:28px;height:28px;background:url("data:image
 .pLbls::before{opacity:.7}
 .pLbls a:hover{text-decoration:underline}
 .pLbls >*{color:inherit;display:inline}
-.pLbls >*:not(:last-child)::after{content:'/'}
+.pLbls >*:not(:last-child)::after{content:'‧'}
 
 /* Profile Images and Name */
 .im{display:flex;align-items:center;justify-content:center;width:35px;height:35px;border-radius:16px;background-color:var(--transB);background-size:cover;background-position:center;background-repeat:no-repeat}
@@ -1440,7 +1440,7 @@ img.im{object-fit:cover;object-position:center}
 /* Breadcrumb */
 .brdCmb{margin-bottom:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .brdCmb a{color:inherit}
-.brdCmb >*:not(:last-child)::after{content:'/';margin:0 4px;font-size:90%;opacity:.6}
+.brdCmb >*:not(:last-child)::after{content:'‧';margin:0 4px;font-size:90%;opacity:.6}
 .brdCmb >*{display:inline}
 .brdCmb .tl::before{content:attr(data-text)}
 .brdCmb .hm a{font-size:90%;opacity:.7}
@@ -1493,7 +1493,7 @@ html:has(.headS:focus-within){overflow:hidden}
 .itemPp{counter-reset:p-cnt}
 .itemPp .iCtnt{display:flex}
 .itemPp >*:not(:last-child){margin-bottom:25px}
-.itemPp .iCtnt::before{flex-shrink:0;content:'#' counter(p-cnt);counter-increment:p-cnt;width:25px;opacity:.6;font-size:85%;line-height:1.8em}
+.itemPp .iCtnt::before{flex-shrink:0;content:'0' counter(p-cnt);counter-increment:p-cnt;width:25px;opacity:.6;font-size:85%;line-height:1.8em}
 .iInr{flex:1 0;width:calc(100% - 25px)}
 .iTtl{font-size:.95rem;font-weight:700;line-height:1.5em}
 .iTtmp{display:inline-flex}
@@ -4759,7 +4759,7 @@ const PlusUIConfig = () => ({});
 
             <b:comment><!--[ Header widget ]--></b:comment>
             <b:section class='headN bl-hide-title' id='sec_Header_Title' maxwidgets='1' showaddelement='false'>
-              <b:widget id='Header01' locked='true' title='Plus Thủ Thuật (Tiêu đề)' type='Header' version='2' visible='true'>
+              <b:widget id='Header01' locked='true' title='KiemesSix (Tiêu đề)' type='Header' version='2' visible='true'>
                 <b:widget-settings>
                   <b:widget-setting name='displayUrl'/>
                   <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -5589,7 +5589,7 @@ const PlusUIConfig = () => ({});
 
             <b:comment><!--[ Ad content ]--></b:comment>
             <b:section class='mainA bl-hide-title' cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and !data:view.isPage' id='sec_Horizontal-Ad' maxwidgets='3' showaddelement='true'>
-              <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList81' locked='true' title='Under Header Ad' type='LinkList' version='2' visible='true'>
+              <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList81' locked='true' title='Under Header Ad' type='LinkList' version='2' visible='false'>
                 <b:widget-settings>
                   <b:widget-setting name='shownum'>2</b:widget-setting>
                   <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5811,7 +5811,7 @@ const PlusUIConfig = () => ({});
                 </b:with>
 
                 <b:section cond='!data:story.active and data:view.isHomepage' id='sec_Top_Widgets' showaddelement='true'>
-                  <b:widget cond='!data:blog.isPrivateBlog and !data:view.isPreview and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList82' locked='true' title='Above Pinned Post Ad' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='!data:blog.isPrivateBlog and !data:view.isPreview and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList82' locked='true' title='Above Pinned Post Ad' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5963,7 +5963,7 @@ const PlusUIConfig = () => ({});
                 </b:section>
 
                 <b:section id='sec_Main_Widgets' showaddelement='true'>
-                  <b:widget cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and (data:view.isHomepage or data:view.isPost) and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList83' locked='true' title='Above Posts Ad [Desktop]' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and (data:view.isHomepage or data:view.isPost) and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList83' locked='true' title='Above Posts Ad [Desktop]' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5994,7 +5994,7 @@ const PlusUIConfig = () => ({});
                       <b:widget-setting name='commentLabel'>Comment</b:widget-setting>
                       <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                      <b:widget-setting name='authorLabel'>Published by</b:widget-setting>
+                      <b:widget-setting name='authorLabel'></b:widget-setting>
                       <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                       <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
                       <b:widget-setting name='showAuthor'>true</b:widget-setting>
@@ -6007,7 +6007,7 @@ const PlusUIConfig = () => ({});
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                       <b:widget-setting name='showLabels'>true</b:widget-setting>
                       <b:widget-setting name='showLocation'>true</b:widget-setting>
-                      <b:widget-setting name='postLabelsLabel'>in</b:widget-setting>
+                      <b:widget-setting name='postLabelsLabel'>trong</b:widget-setting>
                       <b:widget-setting name='showTimestamp'>true</b:widget-setting>
                       <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                       <b:widget-setting name='showBacklinks'>false</b:widget-setting>
@@ -7100,7 +7100,7 @@ const PlusUIConfig = () => ({});
                       </b:loop>
                     </b:includable>
                   </b:widget>
-                  <b:widget cond='!data:amp.active and !data:blog.isPrivateBlog and data:view.isPost and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList84' locked='true' title='Post Middle Ads' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='!data:amp.active and !data:blog.isPrivateBlog and data:view.isPost and ((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList84' locked='true' title='Post Middle Ads' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='text-1'><![CDATA[:scope > p:nth-of-type(18)]]></b:widget-setting>
@@ -7151,7 +7151,7 @@ const PlusUIConfig = () => ({});
                 </b:section>
 
                 <b:section cond='!data:story.active and !data:blog.isPrivateBlog and !data:view.isPreview and !data:view.isSingleItem' id='sec_Bottom_Widgets' showaddelement='true'>
-                  <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList85' locked='true' title='Below Posts Ad' type='LinkList' version='2' visible='true'>
+                  <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList85' locked='true' title='Below Posts Ad' type='LinkList' version='2' visible='false'>
                     <b:widget-settings>
                       <b:widget-setting name='shownum'>2</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -7367,7 +7367,7 @@ const PlusUIConfig = () => ({});
 
                   <b:comment><!--[ sideB sticky ]--></b:comment>
                   <b:section class='sideS' cond='data:view.isLayoutMode or (!data:blog.isPrivateBlog and !data:view.isPreview)' id='sec_Side_Sticky' showaddelement='true'>
-                    <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList86' locked='true' title='Sticky Ad [Desktop]' type='LinkList' version='2' visible='true'>
+                    <b:widget cond='((data:title contains &quot;[Mobile]&quot; and data:blog.isMobileRequest) or (data:title contains &quot;[Desktop]&quot; and !data:blog.isMobileRequest) or (data:title not contains &quot;[Mobile]&quot; and data:title not contains &quot;[Desktop]&quot;))' id='LinkList86' locked='true' title='Sticky Ad [Desktop]' type='LinkList' version='2' visible='false'>
                       <b:widget-settings>
                         <b:widget-setting name='shownum'>2</b:widget-setting>
                         <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -7431,13 +7431,13 @@ const PlusUIConfig = () => ({});
                   <b:section id='sec_Footer_Widgets_1' maxwidgets='2' showaddelement='true'>
                     <b:widget id='Image21' locked='true' title='Organization Name [BlogTitle]' type='Image' version='2' visible='true'>
                       <b:widget-settings>
-                        <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLYXKas2Slg6XQSDnVv2sZp3WrBMgpRTTNdEEmBCO54XHW3kmftJKJMU-CrNBEwOn0CU1J-KwAeGuS-ETuCpXhZob0AYrl789Lrwu_T_CDJYJ2k1hOQ-ur_Ek-iEAIm5-0C-nMjY8DtWtfyZfRaOXJC8mdBvdunVCbObp9ra6rMrcSg7jGCf298UE13as/s150/organization-logo.png</b:widget-setting>
+                        <b:widget-setting name='displayUrl'>https://cdn.jsdelivr.net/gh/KiemesSix/web@app/image/icon/favicon.svg</b:widget-setting>
                         <b:widget-setting name='displayHeight'>150</b:widget-setting>
                         <b:widget-setting name='sectionWidth'>150</b:widget-setting>
                         <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
                         <b:widget-setting name='displayWidth'>150</b:widget-setting>
-                        <b:widget-setting name='link'>Made with tea by</b:widget-setting>
-                        <b:widget-setting name='caption'>Slogan goes here...</b:widget-setting>
+                        <b:widget-setting name='link'>Quản trị viên</b:widget-setting>
+                        <b:widget-setting name='caption'>Kiếm sĩ ngân nga...</b:widget-setting>
                       </b:widget-settings>
                       <b:includable id='main'>
                         <b:include name='content'/>
@@ -7625,7 +7625,7 @@ const PlusUIConfig = () => ({});
                     <b:includable id='main'>
                     <b:class name='fotCd'/>
                       <span class='credit'>
-                        <b:if cond='data:content == &quot;&quot;'><span style='font-family:Arial, Helvetica, sans-serif'>&#169;</span> <span id='getYear'><b:if cond='data:view.url != params(data:view.url, { amp: &quot;1&quot; })'><b:else/>2024</b:if></span> &#8231; <bdi><a expr:href='data:blog.homepageUrl.canonical'><data:blog.title/><b:include name='svg.verify-1'/></a></bdi> &#8231; All rights reserved.<b:else/><data:content/></b:if>
+                        <b:if cond='data:content == &quot;&quot;'>Bản quyền <span style='font-family:Arial, Helvetica, sans-serif'>&#169;</span> <bdi><a expr:href='data:blog.homepageUrl.canonical'><data:blog.title/></a></bdi>. <span id='getYear'><b:if cond='data:view.url != data:view.url params { amp: &quot;1&quot; }'><script>/*<![CDATA[*/ var d = new Date(); var n = d.getFullYear(); document.getElementById('getYear').innerHTML = n; /*]]>*/</script><b:else/>2024</b:if></span> Bảo lưu mọi quyền.<b:else/><data:content/></b:if>
                       </span>
                       <b:if cond='!data:blog.adultContent'>
                         <span class='creator'>Developed by <a href='https://www.toishare.com'>Tôi Share</a>.</span>
@@ -7825,7 +7825,26 @@ const PlusUIConfig = () => ({});
 
   <b:comment><!--[ Addons ]--></b:comment>
   <b:section class='bl-grid-section' cond='!data:story.active' id='sec_Addon_Widgets' showaddelement='false'>
-    <b:widget cond='!data:amp.active' id='LinkList61' locked='true' title='Firebase Configurations' type='LinkList' version='2' visible='false'>
+    <b:widget cond='!data:amp.active' id='LinkList61' locked='true' title='Firebase Configurations' type='LinkList' version='2' visible='true'>
+      <b:widget-settings>
+        <b:widget-setting name='link-7'>G-MX6393RD25</b:widget-setting>
+        <b:widget-setting name='link-5'>483360070164</b:widget-setting>
+        <b:widget-setting name='link-6'>1:483360070164:web:62e18485d94dc606bae501</b:widget-setting>
+        <b:widget-setting name='link-3'>kiemessixapp</b:widget-setting>
+        <b:widget-setting name='link-4'>kiemessixapp.firebasestorage.app</b:widget-setting>
+        <b:widget-setting name='text-1'>authDomain</b:widget-setting>
+        <b:widget-setting name='text-0'>apiKey</b:widget-setting>
+        <b:widget-setting name='text-3'>projectId</b:widget-setting>
+        <b:widget-setting name='text-2'>databaseURL</b:widget-setting>
+        <b:widget-setting name='text-5'>messagingSenderId</b:widget-setting>
+        <b:widget-setting name='text-4'>storageBucket</b:widget-setting>
+        <b:widget-setting name='text-7'>measurementId</b:widget-setting>
+        <b:widget-setting name='text-6'>appId</b:widget-setting>
+        <b:widget-setting name='sorting'>NONE</b:widget-setting>
+        <b:widget-setting name='link-1'>kiemessixapp.firebaseapp.com</b:widget-setting>
+        <b:widget-setting name='link-2'>https://kiemessixapp-default-rtdb.firebaseio.com</b:widget-setting>
+        <b:widget-setting name='link-0'>AIzaSyBt-pdB_fPj7kX1BX-tkcTGQx_RUm35yAs</b:widget-setting>
+      </b:widget-settings>
       <b:includable id='main' var='this'><script id='json:firebaseconfig' type='application/json'><b:include data='{ links: data:links, excludeValues: [&quot;#&quot;, &quot;https://&quot;] }' name='LinkList.json'/></script></b:includable>
       <b:includable id='content'><!--[ removed ]--></b:includable>
     </b:widget>
@@ -7944,7 +7963,7 @@ const PlusUIConfig = () => ({});
 
 /*--[ Global ]--*/
 
-/*! Plus UI Javascript (onload.js) | Authors: Duy Nguyen (https://toishare.com) | License: Unlicensed | Copyright (c) 2024 Tôi Share */
+/*! Javascript (onload.js) */
 "use strict";((e,t,n)=>{let{g:i,pEJ:l,fb:r,gId:o,qSel:s,gTg:a,gCl:c,qSell:d,gAb:h,sAb:u,rAb:g,hAb:m,aCl:f,rCl:p,hCl:b,cOU:w,cEl:y,aEL:v,rEL:k,uHTML:j,wLP:B,iAH:x,dPr:N,iStr:O,iBol:S,iNumV:C,iObjL:E,exp:L,eHTML:T,GI:P,df:A,lz:D,iBot:M,cJs:I,cCss:F,lJs:z,lb:H,pl:$,ps:_,bg:K,vw:V,cf:J,mc:R,tNtf:U,pg:Y}=e,Z=t.Object,q=t.String,G=t.Number,Q=t.Error,W=t.TypeError,X=t.JSON,ee=t.Math,te=t.navigator,ne=(n.documentElement,n.head),ie=n.body,le=q.fromCharCode,re=X.parse,oe=X.stringify,se=(e,t)=>e.charCodeAt(t),ae=(e,t)=>e.charAt(t),ce=(e,t)=>e.indexOf(t),de=e=>/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(e),he=e=>e.toLowerCase().replace(/([-_][a-z])/g,(e=>e.toUpperCase().replace("-","").replace("_",""))),ue=(e,t=!0,n=!0)=>{g(e,"hidden"),t&&p(e,"hidden"),n&&m(e,"aria-hidden")&&u(e,"aria-hidden","false")},ge=l(o("json:bloglabels"));if(ge)for(let e in ge){let t=j(e),n=ge[e];H[t]=n}let me=l(o("json:blogposts"));me&&_.push(me);let fe=l(o("json:blogpager"));fe&&Z.assign(Y,fe);let pe=l(o("json:firebaseconfig"));pe&&Z.assign(r.cf,pe);let be=l(o("json:contactconfig"));be&&Z.assign(J.con,be);let we=l(o("json:translateconfig"));we&&Z.assign(J.gtr,we);let ye=l(o("json:statsconfig"));ye&&Z.assign(J.bst,ye);let ve=l(o("json:accessblocker"));if(ve){let e=J.blk;e.ip.push(...ve.ip),e.ctry.push(...ve.ctry),e.tzn.push(...ve.tzn)}let ke=o("Header01");if(ke){let e=h(ke,"data-description");null!==e&&(K.des=e)}let je=l(o("json:webmanifest"));je&&(""===je.description&&(je.description=null!==K.des?K.des:"No description provided..."),$.pwa.wbm=je);let Be="input is not correctly encoded";class xe{constructor(e){this.k=O(e)?e:xe.DK}e(e){let t=this.k,n=(e=>{let t=e.replace(/\r\n/g,"\n"),n="";for(let e=0;e<t.length;e++){let i=se(t,e);i<128?n+=le(i):i>127&&i<2048?(n+=le(i>>6|192),n+=le(63&i|128)):(n+=le(i>>12|224),n+=le(i>>6&63|128),n+=le(63&i|128))}return n})(e),i="",l=0;for(;l<n.length;){let e=se(n,l);l++;let r=se(n,l);l++;let o=se(n,l);l++;let s=e>>2,a=(3&e)<<4|r>>4,c=(15&r)<<2|o>>6,d=63&o;G.isNaN(r)?(c=64,d=c):G.isNaN(o)&&(d=64),i+=ae(t,s)+ae(t,a)+ae(t,c)+ae(t,d)}return i}eD(e){let t=oe(e);return this.e(t)}dD(e){let t=this.d(e);try{return re(t)}catch(e){throw console.error("JSON invalid:",e),new Q(Be)}}d(e){let t=this.k,n="",i=0,l=e.replace(/[^A-Za-z0-9+\\=]/g,"");for(;i<e.length;){let e=ce(t,ae(l,i));i++;let r=ce(t,ae(l,i));i++;let o=ce(t,ae(l,i));i++;let s=ce(t,ae(l,i));i++;let a=(15&r)<<4|o>>2,c=(3&o)<<6|s;n+=le(e<<2|r>>4),64!==o&&(n+=le(a)),64!==s&&(n+=le(c))}if(n=(e=>{let t="",n=0,i=0,l=i,r=i;for(;n<e.length;)i=se(e,n),i<128?(t+=le(i),n++):i>191&&i<224?(l=se(e,n+1),t+=le((31&i)<<6|63&l),n+=2):(l=se(e,n+1),r=se(e,n+2),t+=le((15&i)<<12|(63&l)<<6|63&r),n+=3);return t})(n),this.e(n)!==e)throw new Q(Be);return n}}xe.DK="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",xe.OD=new xe,xe.O1=new xe("FINEUiBYDevSagARlwXVuCGzbdjMHQcnKypsZhoWLxfkOmrTPtJq3508749216+/="),xe.O2=new xe("MBDRTNFJCAPOSQEIGWLHVYZUKXmbdrtnfjcaposqeigwlhvyzukx3508749216+/=");let Ne={blk:null,push(e){let n="--[[adsense-pushed]]--",i=[],l=e=>{!(e=>!0===e[n]||!e.matches(".adsbygoogle:not(.adsbygoogle-noablate):not([data-adsbygoogle-status]):not([data-ad-status]):not([adsbygoogle-noablate])"))(e)&&!(e=>{let t=e.nextElementSibling;if(t){let e=t.tagName.toLowerCase(),n=t.textContent||t.innerText;return"script"===e&&n.includes("adsbygoogle")&&n.includes("push")}return!1})(e)&&(e=>{try{return(t.adsbygoogle=t.adsbygoogle||[]).push({}),e[n]=!0,i.push(e),!0}catch(t){return console.warn("An error ocurred pushing ad:",e,t),!1}})(e)},r=e||c("adsbygoogle");for(let e=0;e<r.length;e++)l(r[e]);return i},async iBlk(){let e=this;if(S(e.blk))return e.blk;let t="position: fixed; bottom: -99px; right: -99px; height: 18px; width: 18px; pointer-events: none;",n=[["div","div-gpt-ad-3061307416813-0",null,t],["div",null,"textads banner-ads banner_ads ad-unit ad-zone ad-space adsbox ads",t],["ins",null,"adsbygoogle",t]].map((([e,t,n,i])=>{let l=y(e,{style:i});return t&&(l.id=t),n&&(l.className=n),l}));return new Promise(((t,i)=>{for(let e=0;e<n.length;e++)ie.appendChild(n[e]);let l=n=>{e.blk=n,t(n)},r=e=>e.offsetHeight;setTimeout((()=>{18!==r(n[0])||18!==r(n[1])||18!==r(n[2])||n[2].firstElementChild?l(!0):te.onLine?fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js").then((e=>{e.ok&&e.headers.has("Content-Length")?l(!1):l(!0)})).catch((e=>{te.onLine?l(!0):i(e)})):l(!1);for(let e=0;e<n.length;e++)n[e].remove()}),50)}))}},Oe={r:{t:"https://www.cloudflare.com/cdn-cgi/trace",l:"https://raw.githubusercontent.com/Netrvin/cloudflare-colo-list/main/locations.json",c:"https://raw.githubusercontent.com/Netrvin/cloudflare-colo-list/main/country.json"},s:{},async countries(){return this.s.c||(this.s.c=await fetch(this.r.c).then((e=>{if(!e.ok)throw new Q("Failed to fetch countries");return e.json()}))),this.s.c},async locations(){return this.s.l||(this.s.l=await fetch(this.r.l).then((e=>{if(!e.ok)throw new Q("Failed to fetch locations");return e.json()}))),this.s.l},async location(e){if(O(e)&&e.trim().length){let t=await this.locations();for(let n=0;n<t.length;n+=1){let i=t[n];if(i.iata===e)return i}}return null},async country(e){if(O(e)&&e.trim().length){let t=await this.countries();if(O(t[e]))return t[e]}return null},async info(e=!1){let t=async e=>{let t={ts:"timestamp",visit_scheme:"visitScheme",uag:"userAgent"},n=["h"],i=e.trim().split("\n").reduce(((e,i)=>{let[l,r]=i.split("=").map((e=>e.trim()));if(l&&!n.includes(l)){let n="ts"===l?1e3*+r:r;e[t[l]||l]=n}return e}),{});return i.location=await this.location(i.colo),i.country=await this.country(i.loc),i};return(e||!this.s.i)&&(this.s.i=await fetch(this.r.t).then((async e=>{if(!e.ok)throw new Q("Failed to fetch trace");let n=await e.text();return t(n)}))),this.s.i}},Se=["kB","MB","GB","TB","PB","EB","ZB","YB"],Ce=["KiB","MiB","GiB","TiB","PiB","EiB","ZiB","YiB"],Ee=["K","M","B","T","Q","Qu","S","Se","O","N","D"],Le=r.v||"10.13.2",Te=["analytics","app","app-check","auth","database","firestore","functions","installations","messaging","performance","remote-config","storage"],Pe=["SDK_VERSION","apps","initializeApp","onLog","registerVersion","setLogLevel"];for(let e=0;e<Te.length;e++)Pe.push(he(Te[e]));for(let e=0;e<Pe.length;e++){let t=Pe[e];N(r,t,{get:()=>(i.firebase||{})[t]})}let Ae=e=>z(`https://www.gstatic.com/firebasejs/${Le}/firebase-${e}-compat.js`,{crossOrigin:"anonymous",referrerPolicy:"no-referrer"}),De=B((async(...e)=>{if(O(r.SDK_VERSION)){if(r.SDK_VERSION!==Le)throw new Q(`a different version of firebase SDK (${r.SDK_VERSION}) is already loaded, required version: ${Le}`)}else await Ae("app");if(e.length){for(let t=0;t<e.length;t++)if(!Te.includes(e[t]))throw new W(`${oe(e[t])} is not a valid firebase service`);let t=Promise.resolve();for(let n=0;n<e.length;n++){let i=e[n];r[i]||(t=t.then((()=>Ae(i))))}await t}return r})),Me=e=>z(`https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/${e}`,{crossOrigin:"anonymous",referrerPolicy:"no-referrer"}),Ie=B((async(...e)=>{if(i.hljs||await Me("highlight.min.js"),e.length){let t=Promise.resolve();for(let n=0;n<e.length;n++){let l=e[n];O(l)&&(i.hljs.getLanguage(l)||(t=t.then((()=>Me(`languages/${l.toLowerCase()}.min.js`)))))}await t}return i.hljs})),Fe=B((async()=>(i.BloggerFeed||await z("https://cdn.jsdelivr.net/npm/@deox/blogger-feed@0.0.6/dist/blogger-feed.min.js",{crossOrigin:"anonymous",referrerPolicy:"no-referrer"}),i.BloggerFeed))),ze=async({email:e,name:t,message:n})=>{await A;let i=J.con;if(!de(e))throw new W("not a valid email address.");if(!n||!n.trim())throw new W("message cannot be undefined or blank.");let l={email:e,message:n,blogID:K.bgId,token:i.tk};t&&(l.name=t);let r=await fetch(i.au,{method:"POST",body:new URLSearchParams(l)});if(r.ok){let e=await r.json();if(e&&"error"!==e.type&&e.details&&"true"===e.details.emailSentStatus)return{success:l}}return{error:"Failed to submit"}},He=(e,t)=>{let n="";if(!e.matches(t))for(let i=0;i<e.childNodes.length;i+=1){let l=e.childNodes[i],r=l.nodeType===Node.ELEMENT_NODE,o=l.nodeType===Node.COMMENT_NODE;r&&!l.matches(t)?n+=He(l,t):o||(n+=l.nodeValue)}return n.trim()},$e=(e,t,n,i)=>!0===i?e.length/t:e.split(" ").length/n,_e=0;t.addEventListener("scroll",(()=>{let e=t.pageYOffset||t.scrollY||n.documentElement.scrollTop;n.body.classList[e>_e?"add":"remove"]("onSb"),_e=e<=0?0:e}));let Ke=(e,t)=>{let n=h(e,t);n&&!n.includes("-rw")&&(n.includes("blogspot.com")||n.includes("googleusercontent.com"))&&(n.includes("-pd")||n.includes("-p-k-no-nu"))&&u(e,t,n.replace("-p-k-no-nu","-p-k-no-nu-rw-e90").replace("-pd","-p-k-no-nu-rw-e90"))},Ve=d("img.sldI, img.imgThm, .sImg img, img.abtL");for(let e=0;e<Ve.length;e++){let t=Ve[e];b(t,"lazyloaded")||(Ke(t,"data-src"),Ke(t,"data-bg"))}let Je=e=>{let t=a("iframe");if(t.length&&e.source)for(let n=0;n<t.length;n++)try{let i=t[n],l=i.contentWindow||i.contentDocument.defaultView;if(e.source===l)return i}catch(e){}return null},Re=(e,t)=>{e&&"number"==typeof t&&(u(e,"scrolling","no"),u(e,"height",q(t)))};if(v(t,"message",(e=>{let t=e.data;if(O(t)){let n=t.match(/^set-comment-editor-height (\d+)px$/i);n&&n[1]&&Re(Je(e),G(n[1]))}else E(t)&&"amp"===t.sentinel&&"embed-size"===t.type&&C(t.height)&&Re(Je(e),t.height)})),!V.iBt){v(t,"offline",(()=>U(R.youAreOffline))),v(t,"online",(()=>U(R.youAreOnline)));let e=$.pwa;if(e.wbm){let t=oe(e.wbm),n=w(new Blob([t],{type:"application/json"})),i=y("link",{rel:"manifest",href:n}),l=a("link",ne)[0];l?l.parentNode.insertBefore(i,l):ne.appendChild(i)}}let Ue=()=>{let e=$.mt,t=(e,t,n)=>({"@type":"ImageObject",url:e,width:t,height:n}),n=(e,t,n)=>({"@type":"Person",name:T(e),url:t,image:n}),i=e=>{let l=e.aut.im&&e.aut.im.includes("/img/blogger_logo_round_35")?35:512,r=e.aut.im?t(e.aut.im,l,l):null,o={"@type":"Comment",text:T(e.con),datePublished:e.pub,author:n(e.aut.nm,e.aut.url||K.cnHmU,r)},s=e.rep;if(s&&s.length){let e=[];for(let t=0;t<s.length;t++){let n=s[t];n.iDel||e.push(i(n))}o.comment=e}return o},l=l=>{let r={"@context":"http://schema.org","@type":l.lab.includes("News")?"NewsArticle":l.id===V.pgId?"Article":"BlogPosting",mainEntityOfPage:{"@type":"WebPage","@id":l.url},headline:l.ttl,description:l.sum,datePublished:l.pub,dateModified:l.upd,image:t(l.thm||e.defTh,1280,712),publisher:{"@type":"Organization",name:K.ttl,logo:t(e.orgLg,512,512)},author:n(l.aut.nm,l.aut.url||K.cnHmU,l.aut.im?t(l.aut.im,512,512):null)};if(_.c===l){l.text&&(r.articleBody=T(l.text));let e=l.com.ent;if(e&&e.length){let t=[];for(let n=0;n<e.length;n++){let l=e[n];l.iDel||t.push(i(l))}r.comment=t}}return r};if(!0===e.uJs)for(let t in _){let n=_[t];if(_.c===n||1===e.arTyp||3===e.arTyp&&!V.iSi){let e=l(n);I(oe(e),{type:"application/ld+json"})}}if(!V.iBt&&!V.iPv){let e=s(".js-accessblocker"),t=!1,n=()=>{t||F("body .adsbygoogle{display:none!important}")};e&&((e,t,n)=>{let i=J.blk,l=i.tzn,r=i.ctry,o=i.ip,s=(e,t)=>e.trim().toLowerCase()===t.trim().toLowerCase(),a=e=>0!==e.trim().length,c=!1;if(l.length){let t=Intl.DateTimeFormat().resolvedOptions().timeZone;for(let n=0;n<l.length;n++)if(a(l[n])&&s(l[n],t)){e("timezone",l[n]),c=!0;break}}!c&&(r.length||o.length)&&(n?D.then((()=>Oe.info())):Oe.info()).then((t=>{if(t.ip)for(let n=0;n<o.length;n++)if(a(o[n])&&s(o[n],t.ip)){e("ip",o[n]),c=!0;break}if(!c&&(t.country||t.loc))for(let n=0;n<r.length;n++)if(t.country&&s(r[n],t.country)||t.loc&&s(r[n],t.loc)){e("country",r[n]),c=!0;break}})).catch((e=>{console.warn("Error while getting geolocation info:",e),t&&t(e)}))})(((t,i)=>{console.warn(`Blocking access due to matching ${t} with value "${i}"`),V.iAd?U("Access is blocked! It seems you are an admin, so the popup wasn't displayed."):(n(),ue(e))}),null,!0);let i=s(".js-antiadblocker");i&&D.then((()=>Ne.iBlk())).then((e=>{e&&(V.iAd?U("AdBlock is enabled! It seems you are an admin, so the popup wasn't displayed."):(n(),ue(i)))}))}let r=J.con,o=c("blogger-contact-form");if(o.length)for(let e=0;e<o.length;e++){let t=o[e];if("FORM"===t.tagName){let e=t.elements,n=e.name,i=e.email,l=e.message;if(i&&l){let e=!1;v(t,"submit",(o=>{if(o.preventDefault(),!e)if(de(i.value.trim()))if(l.value.trim()){let o={email:i.value.trim(),message:l.value};n.value.trim()&&(o.name=n.value),e=!0,U(h(t,"data-mes-sending")||r.tx.sending),ze(o).then((()=>{U(h(t,"data-mes-sent")||r.tx.sent),t.reset(),e=!1})).catch((n=>{console.warn("Contact from submission error:",n),U(h(t,"data-mes-not-sent")||r.tx.notSent),e=!1}))}else U(h(t,"data-mes-empty-message")||r.tx.emptyMessage),l.focus();else U(h(t,"data-mes-invalid-email")||r.tx.invalidEmail),i.focus()}))}}}};A.then((()=>setTimeout(Ue,20))),L({b64:xe,cpT:async e=>{if(!O(e))throw new W("input is not type of string");if("clipboard"in te)return await te.clipboard.writeText(e),e;let t=ie.appendChild(y("textarea",{style:"position: fixed; left: 100%; width: 0; height: 0; opacity: 0",textContent:e}));t.focus(),t.select();let i=!!n.execCommand("copy");if(t.remove(),i)return e;throw new Q("failed to copy text")},prtB:(e,t=!1,n=1,i=!1)=>{if(!C(e))throw new W(`${e} is not a valid input.`);let l=e,r=t?1e3:1024;if(ee.abs(l)<r)return[q(l),"B"];let o=t?Se:Ce,s=-1,a=10**n;do{l/=r,s++}while(ee.round(ee.abs(l)*a)/a>=r&&s<o.length-1);let c=l.toFixed(n);return i||(c=q(G(c))),[c,o[s]]},abvN:(e,t=1,n=!1)=>{if(!C(e))throw new W(`${e} is not a valid input`);let i=e,l=1e3;if(ee.abs(i)<l)return[q(i),""];let r=Ee,o=-1,s=10**t;do{i/=l,o++}while(ee.round(ee.abs(i)*s)/s>=l&&o<r.length-1);let a=i.toFixed(t);return n||(a=q(G(a))),[a,r[o]]},ads:Ne,ip:Oe,iFb:De,iHl:Ie,iBF:Fe,sFrm:ze,rdTm:(e,{ignoreSelector:t="script, style",isHTML:n=!0,charactersPerMin:i=900,wordsPerMin:l=200,useCharacters:r=!0}={})=>{let o;if(C(e))o=e/i;else if(O(e)){let s;if(n){let n=y("div");n.innerHTML=e,s=He(n,t)}else s=e;o=$e(s,i,l,r)}else{if(!e)throw new W("argument 1 is not an element, string or number.");{let n=He(e,t);o=$e(n,i,l,r)}}return o}})})(PU,window,document);
 
 /*! github.com/aFarkas/lazysizes (v5.3.2 - lazysizes.min.js) | Author: Alexander Farkas | License: MIT | Copyright (c) 2015 Alexander Farkas */
@@ -7971,7 +7990,7 @@ const PlusUIConfig = () => ({});
 
 /*--[ SingleItem ]--*/
 
-/*! Plus UI Javascript (single-item.js) | Authors: Duy Nguyen (https://toishare.com) | License: Unlicensed | Copyright (c) 2024 Tôi Share */
+/*! Javascript (single-item.js) */
 "use strict";((e,t)=>{let{gId:a,qSel:l,qSell:i,gCl:o,cEl:n,aCl:r,rCl:c,hCl:d,gAb:s,hAb:m,sAb:b,rAb:u,aEL:p,rEL:h,iAE:g,iAH:f,cpT:y,eHTML:v,ms:w,mc:A,pl:$,vw:T,ps:x,df:C}=e,k=t.Object,M=t.location,z=k.assign,P=(e,t=!0,a=!0)=>{b(e,"hidden",""),t&&r(e,"hidden"),a&&m(e,"aria-hidden")&&b(e,"aria-hidden","true")},B=(e,t=!0,a=!0)=>{u(e,"hidden"),t&&c(e,"hidden"),a&&m(e,"aria-hidden")&&b(e,"aria-hidden","false")},D=(e,t)=>{let a=[];if(e.length)for(let i=0;i<e.length;i++){let o=e[i],[n,r,c,d,m,b,u,p,h]=["data-id","data-timestamp","data-unix-time","data-author-name","data-author-image","data-author-url","data-is-author","data-is-anonymous","data-is-deleted"].map((e=>s(o,e)));if(n&&r&&c&&null!==d){let e=new Date(Number(c)),i=l(`[data-comment-body-id="${n}"]`,o);if(i){let c={id:n,html:i.innerHTML,text:i.innerText,con:i.textContent||i.innerText,ts:r,pub:e,iAut:"true"===u,iAno:"true"===p,iDel:"true"===h,aut:{nm:d,url:b,im:m}},s=l("ol",o);s&&(c.rep=s?D(s.children,{repTo:n}):[]),t&&k.assign(c,t),a.push(c)}}}return a},H=e=>{let t=s(e,"data-embed");if(t){e.innerHTML="<div class='play' title='Play'><svg viewbox='0 0 213.7 213.7'><polygon class='a' points='73.5,62.5 148.5,105.8 73.5,149.1'/><circle class='b' cx='106.8' cy='106.8' r='103.3'/></svg></div>";let[a,l]=["default","maxresdefault"].map((e=>`https://img.youtube.com/vi/${t}/${e}.jpg`)),i=n("img",{class:"lazyload",attributes:{src:a,alt:"YouTube video thumbnail","data-src":l}});e.appendChild(i);let o=()=>{h(e,"click",o);let a=n("iframe",{class:"loading",src:`https://www.youtube.com/embed/${t}?rel=0&showinfo=0&autoplay=1`,title:"YouTube video player",allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",referrerPolicy:"strict-origin-when-cross-origin",allowFullscreen:!0,attributes:{frameborder:0}}),l=()=>{h(a,"load",l),c(a,"loading"),r(a,"loaded")};p(a,"load",l),p(a,"error",l),e.innerHTML="",e.appendChild(a)};p(e,"click",o)}};a("postBody")&&x.c&&(z(x.c,{con:postBody.textContent,html:postBody.innerHTML,text:postBody.innerText}),z(x.c.com,{ent:(()=>{let e=a("cmHolder");return e?D(e.children):[]})()}));let L=()=>{if(!T.iBt){let e="96",d="comment-editor",w="data-thread",T=$.cm,x=a("iCmn"),C=a("forComments"),k=a("addCm"),z=a("commentForm"),D=()=>/^#comment$/.test(M.hash),L=()=>/[?&](showComment|sc)=(\d+)/i.test(M.search)||/^#c(\d{6,})$/.test(M.hash),E=!1,I=()=>{if(!E&&x&&!a(d)){let t=s(x,w);if(t){let a=n("iframe",{id:d,class:"lazyload",attributes:{name:"comment-editor",title:"Blogger comment",frameborder:"0",allowtransparency:"",sandbox:"allow-scripts allow-same-origin allow-forms allow-top-navigation",height:e,"data-src":t,[w]:t}});g(x,"beforebegin",a),x.remove(),E=!0}}},q=()=>{x&&h(x,"click",q),C&&h(C,"click",q),I()};if(C){p(C,"click",q),x&&p(x,"click",q);let e=()=>{(D()||L())&&(q(),C.checked=!0)};p(t,"hashchange",e),e();let a=i("a[href='#comment']");if(a.length)for(let t=0;t<a.length;t++)p(a[t],"click",e)}else q();if(z){let t=o("rpTo");for(let l=0;l<t.length;l++){let i=t[l];m(i,"data-reply-to")&&p(i,"click",(()=>{q();let t=a(d);if(t){let l=s(i,"data-reply-to"),o=a(`c${l}`),n=`${s(t,w)}&parentID=${l}`;r(z,"cmRbox"),B(k),z.parentNode!==o?o.appendChild(z):z.scrollIntoView({behavior:"smooth"}),s(t,"data-src")!==n&&(u(t,"src"),b(t,"height",e),b(t,"data-src",n),c(t,"lazyloading","lazyloaded"),r(t,"lazyload"))}}))}if(k&&p(k,"click",(()=>{q();let t=a(d);if(t){let a=s(t,w);c(z,"cmRbox"),P(k),k.nextElementSibling!==z?g(k,"afterend",z):z.scrollIntoView({behavior:"smooth"}),s(t,"data-src")!==a&&(u(t,"src"),b(t,"height",e),b(t,"data-src",a),c(t,"lazyloading","lazyloaded"),r(t,"lazyload"))}})),T.par){f(z,"afterbegin",`<div class='tabs'><input id='cmnT-1' type='radio' name='cmnTabs' checked=''/><input id='cmnT-2' type='radio' name='cmnTabs'/><div><label for='cmnT-1'>${A.commentMessage}</label><label for='cmnT-2'>${A.mediaPlus}</label></div><div class='cmnC-1'></div><div class='cmnC-2'>${A.commentMediaParserMessage?`<p class='note'>${A.commentMediaParserMessage}</p>`:""}<div class='cmPar'><div><textarea id='cmParTx' class='tx' placeholder='${v(A.commentMediaInputPlaceholder)}'></textarea><div class='nc'></div><button type='button' class='btn pr' data-action='pre' aria-label='${v(A.pre)}'></button><button type='button' class='btn pr' data-action='code'aria-label='${v(A.code)}'></button><button type='button' class='btn pr' data-action='quote' aria-label='${v(A.quote)}'></button>${T.im?`<button type='button' class='btn pr' data-action='image' aria-label='${v(A.image)}'></button>`:""}<button type='button' class='btn pr' data-action='tag' aria-label='${v(A.tag)}'></button><br/><button type='button' class='btn cp hidden' data-action='copy' aria-label='${v(A.copyCode)}'></button><button type='button' class='btn cl' data-action='clear' aria-label='${v(A.clear)}'></button></div></div></div></div>`);let e,t=l(".cmPar",z),a=i("button[data-action]",t),o=l("textarea",t),n=l(".nc",t),r=(t,a=3e3)=>{clearTimeout(e),b(n,"data-message",t),e=setTimeout((()=>{u(n,"data-message")}),a)},c=()=>{o.disabled=!1,o.value="";for(let e=0;e<a.length;e++){let t=a[e],l=s(t,"data-action");t.disabled=!1,"copy"===l&&P(t)}},d=()=>{o.disabled=!0;for(let e=0;e<a.length;e++){let t=a[e],l=s(t,"data-action");"clear"!==l&&"copy"!==l&&(t.disabled=!0),"copy"===l&&B(t)}};for(let e=0;e<a.length;e++){let t=a[e];p(t,"click",(()=>{let e=s(t,"data-action");if(o.value)switch(e){case"pre":case"code":case"quote":case"tag":o.value=`<i rel='${e}'>${v(o.value,!0,!0,!1)}</i>`,d();break;case"image":/^https?:\/\/(.+)$/.test(o.value.trim())?(o.value=`<i rel='${e}'>${encodeURI(o.value.trim())}</i>`,d()):(r(A.notAValidURL),o.focus());break;case"clear":c(),o.focus();break;case"copy":t.disabled=!0,y(o.value),r(A.copiedCode,2e3),setTimeout((()=>c()),2e3)}else o.focus()}))}}if(T.im){let e=i(".cmCo i[rel='image']");for(let t=0;t<e.length;t+=1){let a=e[t],l=(a.textContent||a.innerText).trim();if(l){let e=n("img",{src:"data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",alt:"Image Comment",class:"lazyload",attributes:{"data-src":l}});a.insertAdjacentElement("beforebegin",e)}a.remove()}}}let R=o("lazyYt");for(let e=0;e<R.length;e++)H(R[e]);let S=a("postGreeting");if(S){let e=[A.welcome,A.timeToSleep,A.haveSweetDreams,A.goodMorning,A.goodAfternoon,A.goodEvening,A.goodNight],t=(new Date).getHours(),a=e[1];t<4?a=e[2]:t<12?a=e[3]:t<17?a=e[4]:t<19?a=e[5]:t<22&&(a=e[6]),b(S,"data-text",a)}}};C.then((()=>setTimeout(L,20)))})(PU,window,document);
 
 /*--[ Custom JS SingleItem (placed above </body>) ]--*/
@@ -7996,11 +8015,11 @@ const PlusUIConfig = () => ({});
 
   </b:if>
 
-  <b:comment><!--[ </body> | <!> Add custom codes (below) ]--></b:comment>
+  <b:comment><!--[ </body> | <!> ↓ ]--></b:comment>
 
 
 
-  <b:comment><!--[ </body> | <!> Add custom codes (above) ]--></b:comment>
+  <b:comment><!--[ </body> | <!> ↑ ]--></b:comment>
 
 <b:if cond='!data:story.active'>&lt;textarea id=&#39;template_widgets_js&#39; disabled readonly hidden aria-hidden=&#39;true&#39; class=&#39;notranslate&#39;&gt;</b:if></body><b:if cond='!data:story.active'>&lt;/textarea&gt;<b:else/>--&gt;</b:if>
 &lt;/body&gt;
