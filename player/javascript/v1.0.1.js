@@ -11801,13 +11801,13 @@ function DefaultGoogleCastButton({ tooltip }) {
   `;
 }
 function DefaultPlayButton({ tooltip }) {
-  const { translations } = useDefaultLayoutContext(), $playText = $i18n$1(translations, "Play"), $pauseText = $i18n$1(translations, "Pause");
+  const { translations } = useDefaultLayoutContext(), $playText = $i18n$1(translations, "Phát (k)"), $pauseText = $i18n$1(translations, "Tạm dừng (k)");
   return html`
     <media-tooltip class="vds-play-tooltip vds-tooltip">
       <media-tooltip-trigger>
         <media-play-button
           class="vds-play-button vds-button"
-          aria-label=${$i18n$1(translations, "Play")}
+          aria-label=${$i18n$1(translations, "Phát (k)")}
         >
           ${IconSlots(["play", "pause", "replay"])}
         </media-play-button>
@@ -13149,7 +13149,7 @@ function DefaultAudioTitle() {
   return $signal(() => {
     let $ref = signal(void 0), $isTextOverflowing = signal(false), media = useMediaContext(), { title, started, currentTime, ended } = useMediaState(), { translations } = useDefaultLayoutContext(), $isTransitionActive = useTransitionActive($ref), $isContinued = () => started() || currentTime() > 0;
     const $title = () => {
-      const word = ended() ? "Replay" : $isContinued() ? "Continue" : "Play";
+      const word = ended() ? "Replay" : $isContinued() ? "Continue" : "Phát (k)";
       return `${i18n$1(translations, word)}: ${title()}`;
     };
     effect(() => {
@@ -13786,7 +13786,7 @@ class MediaAnnouncer extends Component {
   }
   #watchPaused() {
     const { paused } = this.#media.$state;
-    this.#setLabel(!paused() ? "Play" : "Pause");
+    this.#setLabel(!paused() ? "Phát (k)" : "Tạm dừng (k)");
   }
   #watchFullscreen() {
     const { fullscreen } = this.#media.$state;
@@ -14260,7 +14260,7 @@ let PlayButton$1 = class PlayButton extends Component {
   }
   onAttach(el) {
     el.setAttribute("data-media-tooltip", "play");
-    setARIALabel(el, "Play");
+    setARIALabel(el, "Phát (k)");
   }
   #onPress(event) {
     const remote = this.#media.remote;
@@ -20929,7 +20929,7 @@ function PlyrVideoLayout() {
   ];
 }
 function PlayLargeButton() {
-  const media = useMediaContext(), { translations } = usePlyrLayoutContext(), { title } = media.$state, $label = $signal(() => `${i18n(translations, "Play")}, ${title()}`);
+  const media = useMediaContext(), { translations } = usePlyrLayoutContext(), { title } = media.$state, $label = $signal(() => `${i18n(translations, "Phát (k)")}, ${title()}`);
   return html`
     <media-play-button
       class="plyr__control plyr__control--overlaid"
@@ -21067,7 +21067,7 @@ function PIPButton() {
   `;
 }
 function PlayButton() {
-  const { translations } = usePlyrLayoutContext(), $playText = $i18n(translations, "Play"), $pauseText = $i18n(translations, "Pause");
+  const { translations } = usePlyrLayoutContext(), $playText = $i18n(translations, "Phát (k)"), $pauseText = $i18n(translations, "Tạm dừng (k)");
   return html`
     <media-play-button class="plyr__controls__item plyr__control" data-no-label data-plyr="play">
       <slot name="pause-icon" data-class="icon--pressed"></slot>
