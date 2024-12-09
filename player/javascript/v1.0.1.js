@@ -20803,6 +20803,8 @@ const plyrLayoutProps = {
     "play",
     "progress",
     "current-time",
+    "rewind",
+    "fast-forward",
     "mute+volume",
     "captions",
     "settings",
